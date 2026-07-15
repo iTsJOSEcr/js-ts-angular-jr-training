@@ -47,9 +47,47 @@ function obtenerTelefono(cliente) {
 }
 
 
-console.log(obtenerTelefono(cliente));
-// El teléfono que registraste
 
-console.log(obtenerTelefono(cliente2));
-// No registrado
+function obtenerNombreProducto(producto) {
+    if (producto.nombre) {
+        return producto.nombre;
+    } else {
+        return "No existe";
+    }
+}
+
+
+function obtenerPrecioProducto(producto) {
+    return producto.precio;
+}
+
+
+function obtenerNombreCliente(cliente) {
+    if (cliente.nombre) {
+        return cliente.nombre;
+    } else {
+        return "No registrado";
+}
+}
+
+
+
+function obtenerPuestoEmpleado(empleado) {
+    if (empleado.puesto) {
+        return empleado.puesto;
+    } else {
+        return "No registrado";
+    }
+}
+
+
+
+function obtenerEstadoOrden(orden) {
+    return orden.estado;
+}
+
+
+
+
+
 
