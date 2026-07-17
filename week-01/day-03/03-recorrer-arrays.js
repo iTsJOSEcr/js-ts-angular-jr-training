@@ -57,3 +57,4 @@ function buscarProducto(productos, nombreBuscado) {
 const resultado = buscarProducto(productos, "Laptop");
 
 console.log(resultado);
+
