@@ -56,3 +56,29 @@ const productos = carrito.reduce(function(acumulador, producto){
 });
 
 console.log(productos)
+
+
+
+
+const productos = [
+    { nombre: "Mouse", categoria: "Tecnología", precio: 15000 },
+    { nombre: "Teclado", categoria: "Tecnología", precio: 25000 },
+    { nombre: "Silla", categoria: "Hogar", precio: 60000 },
+    { nombre: "Mesa", categoria: "Hogar", precio: 80000 },
+    { nombre: "Audífonos", categoria: "Tecnología", precio: 30000 }
+];
+
+
+const categorias = productos.reduce(function (acumulador, producto) {
+
+    if (!acumulador[producto.categoria]) {
+        acumulador[producto.categoria] = 0;
+    }
+
+    acumulador[producto.categoria]++;
+
+    return acumulador;
+
+}, {});
+
+console.log(categorias);
