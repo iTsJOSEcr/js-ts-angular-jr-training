@@ -31,9 +31,12 @@ console.log("numerospares:", numerosPares)
 
 const notas2 = [80, 90, 100, 70, 60];
 
-const sacarPromedio = notas2.reduce(function(acumulador, numero){
-    return acumulador + numero / 5;
-},0);
+const suma = notas2.reduce(function (acumulador, numero) {
+    return acumulador + numero;
+}, 0);
+
+const promedio = suma / notas2.length;
+
+console.log("Promedio:", promedio);
 
 
-console.log(sacarPromedio)
