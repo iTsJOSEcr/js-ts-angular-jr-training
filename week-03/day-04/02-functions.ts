@@ -37,3 +37,23 @@ function applyTheme(theme: Theme): string {
 
 applyTheme("light");
 applyTheme("dark");
+
+
+
+
+type Role = "admin" | "user" | "guest";
+
+function getAccessMessage(role: Role): string {
+    if (role === "admin") {
+        return "Accesos completo a todo el sistema"
+    } else if (role === "user") {
+        return "Acceso limitado a ciertas funciones"
+    } else {
+        return "Acceso restringido a funciones básicas"
+    }
+}
+
+
+console.log(getAccessMessage("admin"));
+console.log(getAccessMessage("user"));
+console.log(getAccessMessage("guest"));
