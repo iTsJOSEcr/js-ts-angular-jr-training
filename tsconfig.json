@@ -4,8 +4,8 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
 
-    "rootDir": "./week-03",
-    "outDir": "./dist/week-03",
+    "rootDir": ".",
+    "outDir": "./dist",
 
     "strict": true,
     "noImplicitAny": true,
@@ -19,7 +19,8 @@
   },
 
   "include": [
-    "week-03/**/*.ts"
+    "week-03/**/*.ts",
+    "week-04/**/*.ts"
   ],
 
   "exclude": [
