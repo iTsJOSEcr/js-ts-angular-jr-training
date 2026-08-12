@@ -19,8 +19,7 @@
   },
 
   "include": [
-    "week-03/**/*.ts",
-    "week-04/**/*.ts"
+    "week-*/**/*.ts"
   ],
 
   "exclude": [
@@ -28,3 +27,4 @@
     "dist"
   ]
 }
+
